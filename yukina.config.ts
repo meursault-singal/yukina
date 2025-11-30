@@ -4,7 +4,7 @@ import type { Configuration } from "./src/types/config";
 const YukinaConfig: Configuration = {
   title: "Meursault",
   subTitle: "Meursault Template Demo Site",
-  brandTitle: "Yukina",
+  brandTitle: "Meursault",
 
   description: "Demo Site",
 
@@ -37,7 +37,7 @@ const YukinaConfig: Configuration = {
   socialLinks: [
     {
       icon: "line-md:github-loop",
-      link: "https://github.com/WhitePaper233",
+      link: "https://github.com/meursault-singal",
     },
     {
       icon: "mingcute:bilibili-line",
