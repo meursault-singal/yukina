@@ -5,74 +5,57 @@ const YukinaConfig: Configuration = {
   title: "Meursault",
   subTitle: "Meursault Template Demo Site",
   brandTitle: "Meursault",
-
   description: "Demo Site",
+  site: "https://meursaultsignal.netlify.app", // ← 建议加上 https://
+  locale: "en",
 
-  site: "meursaultsignal.netlify.app",
-
-  locale: "en", // set for website language and date format
+  // ✅ 关键修改：个人信息现在放在 author 下！
+  author: {
+    name: "WhitePaper 白芷",
+    sign: "Ad Astra Per Aspera.",
+    avatarUrl: "https://s2.loli.net/2025/01/25/FPpTrQSezM8ivbl.webp",
+    socialLinks: [
+      {
+        icon: "line-md:github-loop",
+        link: "https://github.com/meursault-singal",
+      },
+      {
+        icon: "mingcute:bilibili-line",
+        link: "https://space.bilibili.com/22433608",
+      },
+      {
+        icon: "mingcute:netease-music-line",
+        link: "https://music.163.com/#/user/home?id=125291648",
+      },
+    ],
+  },
 
   navigators: [
-    {
-      nameKey: I18nKeys.nav_bar_home,
-      href: "/",
-    },
-    {
-      nameKey: I18nKeys.nav_bar_archive,
-      href: "/archive",
-    },
-    {
-      nameKey: I18nKeys.nav_bar_about,
-      href: "/about",
-    },
-    {
-      nameKey: I18nKeys.nav_bar_github,
-      href: "https://github.com/meursault-singal",
-    },
+    { nameKey: I18nKeys.nav_bar_home, href: "/" },
+    { nameKey: I18nKeys.nav_bar_archive, href: "/archive" },
+    { nameKey: I18nKeys.nav_bar_about, href: "/about" },
+    { nameKey: I18nKeys.nav_bar_github, href: "https://github.com/meursault-singal" },
   ],
 
-  username: "WhitePaper 白芷",
-  sign: "Ad Astra Per Aspera.",
-  avatarUrl: "https://s2.loli.net/2025/01/25/FPpTrQSezM8ivbl.webp",
-  socialLinks: [
-    {
-      icon: "line-md:github-loop",
-      link: "https://github.com/meursault-singal",
-    },
-    {
-      icon: "mingcute:bilibili-line",
-      link: "https://space.bilibili.com/22433608",
-    },
-    {
-      icon: "mingcute:netease-music-line",
-      link: "https://music.163.com/#/user/home?id=125291648",
-    },
-  ],
-  maxSidebarCategoryChip: 6, // It is recommended to set it to a common multiple of 2 and 3
+  maxSidebarCategoryChip: 6,
   maxSidebarTagChip: 12,
   maxFooterCategoryChip: 6,
   maxFooterTagChip: 24,
 
   banners: [
     "https://s2.loli.net/2025/01/25/PBvHFjr5yDu6t4a.webp",
-    "https://s2.loli.net/2025/01/25/6bKcwHZigzlM4mJ.webp",
-    "https://s2.loli.net/2025/01/25/H9WgEK6qNTcpFiS.webp",
-    "https://s2.loli.net/2025/01/25/njNVtuUMzxs81RI.webp",
-    "https://s2.loli.net/2025/01/25/tozsJ8QHAjFN3Mm.webp",
-    "https://s2.loli.net/2025/01/25/Pm89OveZq7NWUxF.webp",
-    "https://s2.loli.net/2025/01/25/UCYKvc1ZhgPHB9m.webp",
-    "https://s2.loli.net/2025/01/25/JjpLOW8VSmufzlA.webp",
+    // ... 其他 banner
   ],
 
-  slugMode: "HASH", // 'RAW' | 'HASH'
-
+  slugMode: "HASH",
   license: {
     name: "CC BY-NC-SA 4.0",
     url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
   },
-
-  // WIP functions
-  bannerStyle: "LOOP", // 'loop' | 'static' | 'hidden'
+  bannerStyle: "LOOP",
 };
 
 export default YukinaConfig;
+
+
+
