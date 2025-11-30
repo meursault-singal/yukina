@@ -1,4 +1,18 @@
+// src/types/config.ts
 import type I18nKeys from "../locales/keys";
+
+// 👇 新增 Author 接口
+interface Author {
+  name: string;
+  sign?: string;
+  avatarUrl?: string;
+  socialLinks?: { icon: string; link: string }[];
+}
+
+interface Navigator {
+  nameKey: I18nKeys;
+  href: string;
+}
 
 interface Configuration {
   title: string;
@@ -11,13 +25,10 @@ interface Configuration {
 
   locale: "en" | "zh-CN";
 
-  navigators: { nameKey: I18nKeys; href: string }[];
+  navigators: Navigator[];
 
-  username: string;
-  sign: string;
-  avatarUrl: string;
-
-  socialLinks: { icon: string; link: string }[];
+  // ✅ 替换旧字段：移除 username/sign/avatarUrl/socialLinks
+  author: Author; // ← 核心改动！
 
   maxSidebarCategoryChip: number;
   maxSidebarTagChip: number;
@@ -33,7 +44,10 @@ interface Configuration {
     url: string;
   };
 
-  bannerStyle: "LOOP";
+  bannerStyle: "LOOP" | "STATIC" | "HIDDEN"; // 建议扩展为联合类型
 }
 
-export type { Configuration };
+export type { Configuration, Author };
+
+
+

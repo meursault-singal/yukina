@@ -19,7 +19,7 @@ const tagKeys = [...tags.keys()];
       <a href="/about" class="relative h-40 w-40 md:hidden">
         <img
           class="lozad absolute left-0 top-0 h-40 rounded-l-3xl"
-          data-src={YukinaConfig.avatarUrl}
+          data-src={YukinaConfig.author.avatarUrl}
           alt="Avatar"
         />
         <div
@@ -32,7 +32,7 @@ const tagKeys = [...tags.keys()];
       >
         <img
           class="lozad h-40 rounded-3xl"
-          data-src={YukinaConfig.avatarUrl}
+          data-src={YukinaConfig.author.avatarUrl}
           alt="Avatar"
         />
       </a>
@@ -42,17 +42,17 @@ const tagKeys = [...tags.keys()];
             href="/about"
             class="line-clamp-1 text-xl font-semibold text-[var(--text-color)]"
           >
-            {YukinaConfig.username}
+            {YukinaConfig.author.name}
           </a>
           <span class="mb-2 mt-1 h-1 w-8 rounded-full bg-[var(--primary-color)]"
           ></span>
           <p class="line-clamp-1 text-[var(--text-color-lighten)]">
-            {YukinaConfig.sign}
+            {YukinaConfig.author.sign}
           </p>
         </div>
         <ul class="flex flex-row items-center justify-center space-x-6">
           {
-            YukinaConfig.socialLinks.map((item) => (
+            YukinaConfig.author.socialLinks.map((item) => (
               <li>
                 <a href={item.link} class="text-[var(--primary-color)]">
                   <Icon name={item.icon} size={24} />
