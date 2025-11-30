@@ -2,8 +2,8 @@ import I18nKeys from "./src/locales/keys";
 import type { Configuration } from "./src/types/config";
 
 const YukinaConfig: Configuration = {
-  title: "Yukina",
-  subTitle: "Yukina Template Demo Site",
+  title: "Meursault",
+  subTitle: "Meursault Template Demo Site",
   brandTitle: "Yukina",
 
   description: "Demo Site",
