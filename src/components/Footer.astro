@@ -10,6 +10,8 @@ const tags = await GetTags();
 
 const categoryKeys = [...categories.keys()];
 const tagKeys = [...tags.keys()];
+
+console.log("Author name:", YukinaConfig.author.name);
 ---
 
 <div class="mx-3 space-y-4">
@@ -176,7 +178,7 @@ const tagKeys = [...tags.keys()];
     >
       <p>
         © {new Date().getFullYear()}
-        {YukinaConfig.username} All Rights Reserved.
+        {YukinaConfig.author.name} All Rights Reserved.
       </p>
       <p>
         Powered By <a
