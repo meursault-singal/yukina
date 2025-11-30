@@ -7,7 +7,7 @@ const YukinaConfig: Configuration = {
   brandTitle: "Meursault",
   description: "Demo Site",
   site: "https://meursaultsignal.netlify.app", // ← 建议加上 https://
-  locale: "en",
+  locale: "zh-CN",
 
   // ✅ 关键修改：个人信息现在放在 author 下！
   author: {
