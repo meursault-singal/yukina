@@ -6,7 +6,7 @@ const YukinaConfig: Configuration = {
   subTitle: "Meursault Template Demo Site",
   brandTitle: "Meursault",
   description: "Demo Site",
-  site: "https://meursaultsignal.netlify.app", // ← 建议加上 https://
+  site: "https://meursaultsignal.netlify.app", 
   locale: "zh-CN",
 
   // ✅ 关键修改：个人信息现在放在 author 下！
@@ -25,7 +25,7 @@ const YukinaConfig: Configuration = {
       },
       {
         icon: "mingcute:netease-music-line",
-        link: "https://music.163.com/#/user/home?id=125291648",
+        link: "https://music.163.com/#/user/home?id=12192015682",
       },
     ],
   },
