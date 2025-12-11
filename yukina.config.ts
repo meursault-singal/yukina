@@ -11,9 +11,9 @@ const YukinaConfig: Configuration = {
 
   // ✅ 关键修改：个人信息现在放在 author 下！
   author: {
-    name: "WhitePaper 白芷",
-    sign: "Ad Astra Per Aspera.",
-    avatarUrl: "https://s2.loli.net/2025/01/25/FPpTrQSezM8ivbl.webp",
+    name: "Meursault",
+    sign: "A simple person.",
+    avatarUrl: "https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEMeZFpOoGHHot-H19_00tzf8zayL0qaAACoRwAAm312FWLUzusjqN1MTYE.jpg",
     socialLinks: [
       {
         icon: "line-md:github-loop",
@@ -21,7 +21,7 @@ const YukinaConfig: Configuration = {
       },
       {
         icon: "mingcute:bilibili-line",
-        link: "https://space.bilibili.com/22433608",
+        link: "https://space.bilibili.com/1407312985",
       },
       {
         icon: "mingcute:netease-music-line",
